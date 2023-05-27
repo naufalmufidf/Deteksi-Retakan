@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Preprocessing</class>
+ <widget class="QMainWindow" name="Preprocessing">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1230</width>
+    <height>869</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1231</width>
+      <height>851</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(45, 48, 55);</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>260</y>
+       <width>381</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid;
+border-color: rgb(231, 177, 142);
+border-radius: 5px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>260</y>
+       <width>381</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid;
+border-color: rgb(231, 177, 142);
+border-radius: 5px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_loadImage">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>690</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Gramatika-Medium</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #E7B18E;
+border: 1px solid #E7B18E; 
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>Load Image</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_saveImage">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>690</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Gramatika-Medium</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #E7B18E;
+border: 1px solid #E7B18E; 
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>Save Image</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1231</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #E7B18E;</string>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>10</y>
+        <width>611</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Casta Thin</family>
+        <pointsize>72</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: E7B18E;</string>
+      </property>
+      <property name="text">
+       <string>Pre-Processing</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_close">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>20</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: #FF605C;
+border-radius: 9%;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_minimize">
+      <property name="geometry">
+       <rect>
+        <x>1160</x>
+        <y>20</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: #FFBD44;
+border-radius: 9%;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_gtw">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>20</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: #00CA4E;
+border-radius: 9%;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_back">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>151</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Ihome.png</pixmap>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>180</y>
+       <width>101</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Gramatika-Medium</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #E7B18E;</string>
+     </property>
+     <property name="text">
+      <string>Input</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>170</y>
+       <width>121</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Gramatika-Medium</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #E7B18E;</string>
+     </property>
+     <property name="text">
+      <string>Output</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>690</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #E7B18E;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="slider">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>710</y>
+       <width>251</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider::groove:horizontal {
+border: 1px solid #bbb;
+background: white;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #E7B18E, stop: 1 #D0A184);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #D0A184, stop: 1 #8A7163);
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: #fff;
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #eee, stop:1 #ccc);
+border: 1px solid #777;
+width: 13px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #fff, stop:1 #ddd);
+border: 1px solid #444;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="tickInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_process">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>430</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Gramatika-Medium</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #E7B18E;
+border: 1px solid #E7B18E; 
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>Process</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_credits">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>810</y>
+       <width>761</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Gramatika-Medium</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(110, 117, 134);</string>
+     </property>
+     <property name="text">
+      <string>Final project by : C2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1230</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuColor">
+    <property name="title">
+     <string>Color</string>
+    </property>
+    <addaction name="actionGrayscale"/>
+    <addaction name="actionBiner"/>
+    <addaction name="actionNegative"/>
+   </widget>
+   <widget class="QMenu" name="menucoba">
+    <property name="title">
+     <string>coba</string>
+    </property>
+    <addaction name="actionCoba"/>
+   </widget>
+   <widget class="QMenu" name="menuNoise_Reduction">
+    <property name="title">
+     <string>Noise Reduction</string>
+    </property>
+    <addaction name="actionKonvolusi"/>
+    <addaction name="actionMean_Filter"/>
+    <addaction name="actionGaussian_Filter"/>
+    <addaction name="actionMedian_Filter"/>
+    <addaction name="actionDFT_Smoothing"/>
+    <addaction name="separator"/>
+    <addaction name="actionBilateral_Filter"/>
+   </widget>
+   <widget class="QMenu" name="menuHistogram">
+    <property name="title">
+     <string>Histogram</string>
+    </property>
+    <addaction name="actionHistogram_Grayscale"/>
+    <addaction name="actionHistogram_RGB"/>
+    <addaction name="actionHistogram_Equalization"/>
+   </widget>
+   <widget class="QMenu" name="menuContrast_n_Brightness">
+    <property name="title">
+     <string>Contrast n Brightness</string>
+    </property>
+    <addaction name="actionOperasi_Pencerahan"/>
+    <addaction name="actionSimple_Contrast"/>
+    <addaction name="actionContrast_Stretching"/>
+    <addaction name="separator"/>
+    <addaction name="actionGamma_Correction"/>
+   </widget>
+   <widget class="QMenu" name="menuOperasi_Geometri">
+    <property name="title">
+     <string>Operasi Geometri</string>
+    </property>
+    <widget class="QMenu" name="menuRotasi">
+     <property name="title">
+      <string>Rotasi</string>
+     </property>
+     <addaction name="action_min90d"/>
+     <addaction name="action_min45d"/>
+     <addaction name="action45d"/>
+     <addaction name="action90d"/>
+     <addaction name="action180d"/>
+    </widget>
+    <widget class="QMenu" name="menuResize">
+     <property name="title">
+      <string>Resize</string>
+     </property>
+     <widget class="QMenu" name="menuZoom_In">
+      <property name="title">
+       <string>Zoom In</string>
+      </property>
+      <addaction name="action2X"/>
+      <addaction name="action3X"/>
+      <addaction name="action4X"/>
+     </widget>
+     <widget class="QMenu" name="menuZoom_Out">
+      <property name="title">
+       <string>Zoom Out</string>
+      </property>
+      <addaction name="actionQuarter"/>
+      <addaction name="actionHalf"/>
+      <addaction name="actionThree_Quarter"/>
+     </widget>
+     <widget class="QMenu" name="menuSkewed">
+      <property name="title">
+       <string>Skewed</string>
+      </property>
+      <addaction name="action360p"/>
+      <addaction name="action480p"/>
+      <addaction name="action720p"/>
+      <addaction name="action1080p"/>
+     </widget>
+     <addaction name="menuZoom_In"/>
+     <addaction name="menuZoom_Out"/>
+     <addaction name="menuSkewed"/>
+    </widget>
+    <addaction name="actionTranslasi"/>
+    <addaction name="menuRotasi"/>
+    <addaction name="actionTranspose"/>
+    <addaction name="menuResize"/>
+    <addaction name="actionCrop_Image"/>
+   </widget>
+   <widget class="QMenu" name="menuOperasi_Aritmatika">
+    <property name="title">
+     <string>Operasi Aritmatika</string>
+    </property>
+    <addaction name="actionplusmin"/>
+    <addaction name="actionkalibagi"/>
+   </widget>
+   <widget class="QMenu" name="menuOperasi_Boolean">
+    <property name="title">
+     <string>Operasi Boolean</string>
+    </property>
+    <addaction name="actionAND"/>
+    <addaction name="actionOR"/>
+    <addaction name="actionXOR"/>
+   </widget>
+   <addaction name="menuColor"/>
+   <addaction name="menuContrast_n_Brightness"/>
+   <addaction name="menuNoise_Reduction"/>
+   <addaction name="menuHistogram"/>
+   <addaction name="menuOperasi_Geometri"/>
+   <addaction name="menuOperasi_Aritmatika"/>
+   <addaction name="menuOperasi_Boolean"/>
+   <addaction name="menucoba"/>
+  </widget>
+  <action name="actionGrayscale">
+   <property name="text">
+    <string>Grayscale</string>
+   </property>
+  </action>
+  <action name="actionBiner">
+   <property name="text">
+    <string>Biner</string>
+   </property>
+  </action>
+  <action name="actionNegative">
+   <property name="text">
+    <string>Negative</string>
+   </property>
+  </action>
+  <action name="actionCoba">
+   <property name="text">
+    <string>Coba</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Grayscale">
+   <property name="text">
+    <string>Histogram Grayscale</string>
+   </property>
+  </action>
+  <action name="actionHistogram_RGB">
+   <property name="text">
+    <string>Histogram RGB</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Equalization">
+   <property name="text">
+    <string>Histogram Equalization</string>
+   </property>
+  </action>
+  <action name="actionSimple_Contrast">
+   <property name="text">
+    <string>Simple Contrast</string>
+   </property>
+  </action>
+  <action name="actionContrast_Stretching">
+   <property name="text">
+    <string>Contrast Stretching</string>
+   </property>
+  </action>
+  <action name="actionGamma_Correction">
+   <property name="text">
+    <string>Gamma Correction</string>
+   </property>
+  </action>
+  <action name="actionKonvolusi">
+   <property name="text">
+    <string>Konvolusi</string>
+   </property>
+  </action>
+  <action name="actionMean">
+   <property name="text">
+    <string>Mean</string>
+   </property>
+  </action>
+  <action name="actionGaussian">
+   <property name="text">
+    <string>Gaussian</string>
+   </property>
+  </action>
+  <action name="actionMean_Filter">
+   <property name="text">
+    <string>Mean Filter</string>
+   </property>
+  </action>
+  <action name="actionGaussian_Filter">
+   <property name="text">
+    <string>Gaussian Filter</string>
+   </property>
+  </action>
+  <action name="actionMedian_Filter">
+   <property name="text">
+    <string>Median Filter</string>
+   </property>
+  </action>
+  <action name="actionDFT_Smoothing">
+   <property name="text">
+    <string>DFT Smoothing</string>
+   </property>
+  </action>
+  <action name="actionBilateral_Filter">
+   <property name="text">
+    <string>Bilateral Filter</string>
+   </property>
+  </action>
+  <action name="actionTranslasi">
+   <property name="text">
+    <string>Translasi</string>
+   </property>
+  </action>
+  <action name="actionTranspose">
+   <property name="text">
+    <string>Transpose</string>
+   </property>
+  </action>
+  <action name="actionCrop_Image">
+   <property name="text">
+    <string>Crop Image</string>
+   </property>
+  </action>
+  <action name="action_min90d">
+   <property name="text">
+    <string>-90 Derajat</string>
+   </property>
+  </action>
+  <action name="action_min45d">
+   <property name="text">
+    <string>-45 Derajat</string>
+   </property>
+  </action>
+  <action name="action45d">
+   <property name="text">
+    <string>45 Derajat</string>
+   </property>
+  </action>
+  <action name="action90d">
+   <property name="text">
+    <string>90 Derajat</string>
+   </property>
+  </action>
+  <action name="action180d">
+   <property name="text">
+    <string>180 Derajat</string>
+   </property>
+  </action>
+  <action name="action2X">
+   <property name="text">
+    <string>2X</string>
+   </property>
+  </action>
+  <action name="action3X">
+   <property name="text">
+    <string>3X</string>
+   </property>
+  </action>
+  <action name="action4X">
+   <property name="text">
+    <string>4X</string>
+   </property>
+  </action>
+  <action name="actionQuarter">
+   <property name="text">
+    <string>1/4</string>
+   </property>
+  </action>
+  <action name="actionHalf">
+   <property name="text">
+    <string>1/2</string>
+   </property>
+  </action>
+  <action name="actionThree_Quarter">
+   <property name="text">
+    <string>3/4</string>
+   </property>
+  </action>
+  <action name="action360p">
+   <property name="text">
+    <string>360p</string>
+   </property>
+  </action>
+  <action name="action480p">
+   <property name="text">
+    <string>480p</string>
+   </property>
+  </action>
+  <action name="action720p">
+   <property name="text">
+    <string>720p</string>
+   </property>
+  </action>
+  <action name="action1080p">
+   <property name="text">
+    <string>1080p</string>
+   </property>
+  </action>
+  <action name="actionplusmin">
+   <property name="text">
+    <string>Tambah dan Kurang</string>
+   </property>
+  </action>
+  <action name="actionkalibagi">
+   <property name="text">
+    <string>Kali dan Bagi</string>
+   </property>
+  </action>
+  <action name="actionAND">
+   <property name="text">
+    <string>AND</string>
+   </property>
+  </action>
+  <action name="actionOR">
+   <property name="text">
+    <string>OR</string>
+   </property>
+  </action>
+  <action name="actionXOR">
+   <property name="text">
+    <string>XOR</string>
+   </property>
+  </action>
+  <action name="actionPre_processing">
+   <property name="text">
+    <string>Pre-processing</string>
+   </property>
+  </action>
+  <action name="actionOperasi_Pencerahan">
+   <property name="text">
+    <string>Operasi Pencerahan</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
